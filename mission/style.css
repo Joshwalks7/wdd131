@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Deseret&display=swap');
+main {
+    margin: 50px auto;
+    max-width: 55%;
+    text-align: center;
+    border: 1px solid grey;
+}
+body {
+    font-family: "Noto Sans Deseret", Arial, Helvetica, sans-serif;
+}
+.container {
+    margin: 50px auto 30px;
+    max-width: 65%;
+}
+img {
+    width: 30%;
+    margin-top: 20px;
+}
+li {
+    text-align: left;
+    font-weight: bold;
+    font-size: .8em;
+    line-height: 26px;
+    margin: none;
+    padding-bottom: 10px;
+}
+p {
+    text-align: left;
+    font-size: .8em;
+    font-weight: bold;
+    line-height: 26px;
+}
+h1 {
+    font-family: "Noto Sans Deseret", Arial, Helvetica, sans-serif;
+    letter-spacing: .05em;
+    margin-bottom: 8px;
+}
+h2 {
+    margin-top: 0px;
+    font-family: "Noto Sans Deseret", Arial, Helvetica, sans-serif;
+    font-size: .9em;
+    color: rgb(2, 147, 196);
+    letter-spacing: .1em;
+    margin-bottom: -8px;
+}
+hr {
+    color: grey;
+    height: .1px;
+    margin-bottom: 30px;
+}
+.list-heading {
+    font-style: italic;
+    font-weight: bold;
+    font-size: .8em;
+}
