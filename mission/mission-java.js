@@ -15,7 +15,7 @@ function changeTheme() {
         let image = document.querySelector('img');
         image.setAttribute('src', 'byui-logo-white.png');
         let h2 = document.querySelector('h2');
-        h2.style.color = ('rgb(135, 203, 245)');
+        h2.style.color = ('rgb(142, 219, 254)');
     } else {
         document.body.style.backgroundColor = ('#fff');
         document.body.style.color = ('#000');
