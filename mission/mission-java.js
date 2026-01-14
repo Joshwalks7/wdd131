@@ -6,7 +6,7 @@ selectElem.addEventListener('change', changeTheme);
 function changeTheme() {
     let current = selectElem.value;
     if (current == 'dark') {
-        document.body.style.backgroundColor = ('#222222');
+        document.body.style.backgroundColor = ('#333');
         document.body.style.color = ('#fff');
         let hr = document.querySelector('hr');
         hr.style.color = ('#fff');
