@@ -19,6 +19,8 @@ function changeTheme() {
     } else {
         document.body.style.backgroundColor = ('#fff');
         document.body.style.color = ('#000');
+        let hr = document.querySelector('hr');
+        hr.style.color = ('rgb(128, 128, 128');
         let image = document.querySelector('img');
         image.setAttribute('src', 'byui_logo.webp');
         let border = document.querySelector('main');
