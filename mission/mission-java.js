@@ -22,8 +22,8 @@ function changeTheme() {
         let image = document.querySelector('img');
         image.setAttribute('src', 'byui_logo.webp');
         let border = document.querySelector('main');
-        border.style.borderColor = ('#000');
+        border.style.borderColor = ('rgb(128, 128, 128)');
         let h2 = document.querySelector('h2');
-        h2.style.color = ('rgb(2, 147, 196');
+        h2.style.color = ('rgb(2, 147, 196)');
     }
 }

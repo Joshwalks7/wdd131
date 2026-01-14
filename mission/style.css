@@ -3,7 +3,7 @@ main {
     margin: 50px auto;
     max-width: 55%;
     text-align: center;
-    border: 1px solid grey;
+    border: 1px solid rgb(128, 128, 128);
 }
 body {
     font-family: "Noto Sans Deseret", Arial, Helvetica, sans-serif;
