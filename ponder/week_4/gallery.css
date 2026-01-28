@@ -33,10 +33,12 @@ dialog {
 }
 .close-viewer {
     position: absolute;
-    top: 10vh;
+    top: 15vh;
     right: 2vh;
-    padding: 3px 6px;
-    font-size: 1.5em;
+    padding: 8px 10px;
+    font-size: 2em;
+    color: blue;
+    border-radius: 40px;
 }
 
 @media screen and (min-width: 700px) {
