@@ -10,9 +10,20 @@ header {
     margin-top: 0;
     text-align: center;
 }
-nav {
+.change {
+    height: 240px;
+}
+.hide {
     display: none;
 }
+nav a {
+    display: block;
+}
+a {
+        color: white;
+        margin-top: none;
+        padding: 4px 0;
+    }
 main {
     text-align: center;
     display: grid;
@@ -37,8 +48,10 @@ h2 {
 }
 h3 {
     font-size: 1.6em;
-    margin-top: 5px;
+    margin-top: 0px;
     padding: 0;
+    color: white;
+    margin-bottom: 0;
 }
 img {
     width: 300px;
@@ -53,26 +66,78 @@ p {
 section {
     text-align: center;
 }
+dialog img {
+    width: 90%;
+    display: block;
+    margin: 20vh auto;
+    border: none;
+}
+dialog {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: rgba(0,0,0,.75);
+}
+.menu-btn {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+.close-viewer {
+    position: absolute;
+    top: 16.5vh;
+    right: .5vh;
+    padding: 8px 10px;
+}
+/* .modal-content {
+    position: relative;
+    display: inline-block;
+    margin: 20vh auto;
+    
+}
+.modal-content img {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: 0;
+} */
 @media screen and (min-width: 700px) {
     main {
         grid-template-columns: 1fr 1fr;
         max-width: 800px;
     }
+    dialog img {
+        width: 60%;
+        height: 60%;
+        margin: 15vh auto;
+    }
+    .close-viewer {
+    position: absolute;
+    top: 12vh;
+    right: 17vh;
+    padding: 8px 10px;
+    }
 }
 @media screen and (min-width: 1000px) {
     main {
         grid-template-columns: 1fr 1fr 1fr;
-        max-width: 800px;
+        max-width: 1000px;
         gap: 30px;
+        margin: 0 auto;
+        justify-items: center;
     }
     img {
         width: 220px;
         height: 220px;
     }
-    h3 {
+    .menu-btn {
         display: none;
     }
-    nav {
+    .hide {
+        display: inline;
+    }
+    nav a {
         display: inline;
     }
     a {
@@ -81,5 +146,26 @@ section {
     }
     h2 {
         font-size: 1.7em;
+    }
+    .change {
+    height: 100px;
+    }
+    dialog img {
+        width: 60%;
+        height: 80%;
+        margin: 15vh auto;
+    }
+    .viewer {
+        margin: 50px;
+        padding: 50px;
+    }
+    .viewer img {
+        max-width: 800px;
+    }
+    .close-viewer {
+    position: absolute;
+    top: 12vh;
+    right: 25vh;
+    padding: 8px 10px;
     }
 }
