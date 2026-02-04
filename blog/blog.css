@@ -1,0 +1,75 @@
+body {
+    padding: 3px;
+}
+h1 {
+    text-align: center;
+    border-bottom: 2px solid rgb(240, 192, 103);
+    padding-bottom: 20px;
+    margin-bottom: 0;
+}
+nav {
+    text-align: right;
+    border-bottom: 2px solid rgb(240, 192, 103);
+    font-size: 1.3em;
+    padding: 15px 0;
+}
+nav a {
+    color: rgb(199, 37, 37);
+    text-decoration: none;
+    margin: auto 30px;
+}
+main {
+    margin-top: 53px;
+    border-top: 2px solid rgb(240, 192, 103);
+    margin-bottom: 30px;
+}
+.details {
+    text-align: right;
+}
+.book {
+    padding: 0 35px;
+}
+
+.book h2 {
+    color: rgb(199, 37, 37);
+    font-style: bold;
+}
+.book-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 400px;
+}
+.book-container img {
+    place-self: center;
+}
+footer {
+    text-align: center;
+    border-top: 2px solid rgb(240, 192, 103);
+    padding: 20px;
+}
+.date {
+    font-style: italic;
+}
+h3 {
+    margin: 0;
+}
+@media (min-width: 700px) {
+    .book {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        margin: 0 auto 50px;
+        max-width: 800px;
+    }
+    .details {
+        border-right: 2px solid rgb(240, 192, 103);
+        padding-right: 50px;
+    }
+    .book-container {
+        padding-left: 50px;
+        max-width: 500px;
+    }
+    main {
+        border-top: none;
+        height: 500px;
+    }
+}
