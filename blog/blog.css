@@ -23,6 +23,9 @@ main {
     border-top: 2px solid rgb(240, 192, 103);
     margin-bottom: 30px;
 }
+p {
+    font-weight: bold;
+}
 .details {
     text-align: right;
 }
