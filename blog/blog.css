@@ -48,6 +48,7 @@ p {
 footer {
     text-align: center;
     border-top: 2px solid rgb(240, 192, 103);
+    border-bottom: 2px solid rgb(240, 192, 103);
     padding: 20px;
 }
 .date {
@@ -73,6 +74,6 @@ h3 {
     }
     main {
         border-top: none;
-        height: 500px;
+        /* height: 100vh; */
     }
 }
