@@ -1,0 +1,94 @@
+body {
+    font-size: 1.1em;
+}
+#form-grid {
+    width: 500px;
+    display: grid;
+    grid-template-columns: 85px 1fr 85px;
+    grid-template-rows: 55px 200px 55px 55px;
+    margin: 100px auto;
+}
+#card-front {
+    width: 100%;
+    height: 100%;
+    grid-column: 1/3;
+    grid-row: 1/3;
+    background-color: rgb(204, 204, 204);
+    z-index: 2;
+    display: grid;
+    margin: auto auto;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 25px;
+    border-radius: 15px;
+    gap: 3px;
+    box-sizing: border-box;
+    place-items: center;
+    box-shadow: 5px 5px 5px #888888;
+}
+
+#card-back {
+    grid-column: 2/4;
+    grid-row: 2/4;
+    background-color: rgb(204, 204, 204);
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    box-shadow: 5px 5px 5px #888888;
+    display: grid;
+    grid-template-columns: 330px 1fr;
+    grid-template-rows: 50px 100px 100px;
+    gap: 3px;
+    padding: 15px 0;
+    box-sizing: border-box;
+}
+.cvc {
+    grid-row: 3/4;
+    grid-column: 2/3;
+    font-size: .9em;
+    padding-left: 3px;
+}
+#cardCVC {
+    width: 60px;
+    height: 30px;
+}
+.stripe {
+    background-color: black;
+    grid-column: 1/3;
+}
+.holder {
+    grid-row: 3/4;
+}
+.total {
+    justify-self: left;
+}
+.cardEmoji {
+    justify-self: right;
+    font-size: 2.3em;
+    padding-bottom: 10px;
+}
+#cardExpiration {
+    grid-row: 3/4;
+}
+#year, #month {
+    width: 38px;
+    height: 30px;
+}
+#cardHolder, #cardNumber {
+    width: 220px;
+    height: 30px;
+}
+.submit {
+    grid-column: 3/4;
+    grid-row: 4/5;
+    justify-self: end;
+    align-self: end;
+    height: 40px;
+    font-size: .75em;
+    border-radius: 10px;
+    width: 100%;
+}
+.errors {
+    white-space: pre-line;
+    color: red;
+  }
