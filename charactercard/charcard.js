@@ -5,39 +5,44 @@ const snortleblat = {
     health: 100,
     image: 'snortleblat.webp',
     attacked: function() {
-        if (this.health >= 20) {
-            this.health -= 20;
-        } else {
+        this.health -= 20;
+        if (this.health <=0) {
+            this.health = 0;
+            render();
             alert('Character Died');
+        } else {
+            render();
         }
     },
     levelUp: function() {
         this.level += 1;
+        this.health += 20;
+        render();
     }
 }
 const main = document.querySelector('main');
 
-function cardAddition() {
-    const article = document.createElement('article');
-    article.className = 'card';
+function render() {
+    main.innerHTML = '';
+    
     let html = `
-    <img src='${snortleblat.image}' class='image' alt='snortleblat img'>
-    <p class='name'>${snortleblat.name}</p>
-    <div class='stats'>
-    <p>Class: ${snortleblat.class}</p>
-    <p>Level: ${snortleblat.level}</p>
-    <p>Health: ${snortleblat.health}</p>
-    <div class='buttons'>
-    <button class='attacked'>Attacked</button>
-    <button class='levelup'>Level Up</button>
-    </div>
-    </div>
+    <article class='card'>
+        <img src='${snortleblat.image}' class='image' alt='snortleblat img'>
+        <p class='name'>${snortleblat.name}</p>
+        <div class='stats'>
+            <p>Class: ${snortleblat.class}</p>
+            <p>Level: ${snortleblat.level}</p>
+            <p>Health: ${snortleblat.health}</p>
+            <div class='buttons'>
+                <button class='attacked'>Attacked</button>
+                <button class='levelup'>Level Up</button>
+            </div>
+        </div>
+    </article>
     `
-    article.innerHTML = html;
-    main.appendChild(article);
+    main.innerHTML = html;
+    document.querySelector('.attacked').addEventListener('click', () => snortleblat.attacked());
+    document.querySelector('.levelup').addEventListener('click', () => snortleblat.levelUp());
 };
 
-cardAddition();
-
-document.querySelector('.attacked').addEventListener('click', snortleblat.attacked);
-document.querySelector('.levelup').addEventListener('click', snortleblat.levelUp);
+render();
