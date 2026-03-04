@@ -40,7 +40,7 @@ margin-top: 50px;
     justify-content: center;
 }
 .gallery section {
-    flex: 0 1 460px;
+    flex: 1 1 460px;
 }
 
 @media screen and (min-width: 700px) {
@@ -54,9 +54,9 @@ margin-top: 50px;
         flex-direction: row;
         gap: 40px;
     }
-    .gallery section {
+    /* .gallery section {
     flex: 0 1 460px;
-    }
+    } */
     .media-card-image {
         flex: 0 1 300px;
     }
