@@ -3,36 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find some tasty recipes that may become lifelong favorites!">
+    <meta name="author" content="Joshua Walker">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Open Graph (Facebook, LinkedIn, etc.) -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Your Title">
-    <meta property="og:description" content="Your Description">
-    <meta property="og:url" content="Your URL">
-    <meta property="og:image" content="social-preview-image.png">
+    <meta property="og:title" content="Recipe Book">
+    <meta property="og:description" content="Find some tasty recipes that may become lifelong favorites!">
+    <meta property="og:url" content="https://joshwalks7.github.io/wdd131/recipes/">
+    <meta property="og:image" content="images/recipe_social_preview.jpg">
     <!-- X Card -->
     <meta name="twitter:card" content="Social Preview Image">
-    <meta name="twitter:title" content="Your Title">
-    <meta name="twitter:description" content="Your Description">
-    <meta name="twitter:image" content="social-preview-image.png">
+    <meta name="twitter:title" content="Recipe Book">
+    <meta name="twitter:description" content="Find some tasty recipes that may become lifelong favorites!">
+    <meta name="twitter:image" content="images/recipe_social_preview.jpg">
     <!-- One favicon (ICO works everywhere) -->
-    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="images/recipe.ico">
     <!-- One Apple Touch Icon (iOS home screen) -->
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-                
+    <link rel="apple-touch-icon" href="images/recipe_icon.jpg">    
     <link rel="stylesheet" href="recipes.css">
-    <title>Recipes</title>
+    <title>Recipe Book</title>
 </head>
 <body>
     <header>
-        <img src="images/recipe-book.png" alt="Recipe Book Logo">
-        <h1>Recipe Book</h1>
-    </header>
-    <footer>
-        <div>
-            <img src="images/instagram_icon.svg" alt="X Logo">
-            <img src="images/youtube_icon.svg" alt="Youtube Logo">
-            <img src="images/pinterest_icon.svg" alt="Pintrest Logo">
+        <div id='logo'>
+            <img src="images/recipe-book.png" alt="Recipe Book Logo" width="512" height="512">
+            <h1>Recipe Book</h1>
         </div>
+        <div id="search">
+            <input type="text" id="searchBar" name="searchBar" placeholder="Find a recipe">
+            <img src="images/search.svg" alt="search icon">
+        </div>
+    </header>
+    <main>
+        <hr>
+        <div class="recipe">
+            <img src="images/apple-crisp.jpg" alt="apple crisp treat" width="750" height="563">
+            <div class="recipe-text">
+                <p class="category">dessert</p>
+                <h2>APPLE CRISP</h2>
+                <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
+                <span aria-hidden="true" class="icon-star">⭐</span>
+                <span aria-hidden="true" class="icon-star">⭐</span>
+                <span aria-hidden="true" class="icon-star">⭐</span>
+                <span aria-hidden="true" class="icon-star">⭐</span>
+                <span aria-hidden="true" class="icon-star-empty">☆</span>
+                </span>
+                <p class="hidden">This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="social">
+            <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
+            <a href="#"><img src="images/instagram_icon.svg" alt="instagram icon"></a>
+            <a href="#"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
+            <a href="#"><img src="images/pinterest_icon.svg" alt="pinterest icon"></a>
+        </div>                  
         <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>            
     </footer>
 </body>

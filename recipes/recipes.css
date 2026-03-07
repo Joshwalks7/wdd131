@@ -1,3 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
 * {
     box-sizing: border-box;
+}
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+    flex-flow: wrap;
+}
+#logo img {
+    height: 140px;
+    width: 140px;
+}
+h1 {
+    font-family: 'Amatic SC', Arial, Helvetica, sans-serif;
+    font-size: 4.5em;
+}
+#search input{
+    border: none;
+    width: 340px;
+    font-size: 1.2em;
+    margin: 0 5px;
+}
+#search img {
+    width: 40px;
+    margin: 10px 0;
+    padding-left: 5px;
+    border-left: grey 2px solid;
+    margin-right: 5px;
+}
+#search {
+    width: 400px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border: 2.5px black solid;
+    border-radius: 10px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+footer img{
+    width: 40px;
+    height: 40px;
+}
+hr {
+    height: 3px;
+    width: 400px;
+    background-color: lightgrey;
+    border-radius: 5px;
+    margin: 15px auto;
+}
+.recipe {
+    width: 400px;
+    border: 2.5px black solid;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: none;
+}
+.recipe img {
+    width: 100%;
+    object-fit: cover;
+    max-width: 400px;
+    height: 250px;
+}
+.category {
+    background-color: rgb(235, 234, 234);
+    width: 90px;
+    text-align: center;
+    font-size: 25px;
+    border: solid 1px darkgray;
+    margin-top: 5px;
+    font-weight: bold;
+}
+h2 {
+    font-family: 'Amatic SC', Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    color: #005A8D;
+    margin: 0;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px auto 0;
+    gap: 20px;
+    width: 400px;
+}
+.icon-star-empty {
+    font-size: 1.7em;
+}
+.icon-star {
+    font-size: 1.3em;
+}
+.hidden {
+    display: none;
+    font-weight: bold;
+}
+
+@media (min-width: 930px) {
+    footer {
+        flex-direction: row-reverse;
+        max-width: 1000px;justify-content: space-between;
+        width: 70%;
+        max-width: 1000px;
+    }
+    #logo img {
+    height: 170px;
+    width: 170px;
+    }
+    h1 {
+        font-size: 6em;
+    }
+    #search input{
+    width: 90%;
+    }
+    #search {
+        width: 70%;
+        max-width: 1000px;
+    }
+    hr {
+        width: 70%;
+        max-width: 1000px;
+    }
+    .recipe {
+        width: 70%;
+        flex-direction: row;
+        max-width: 1000px;
+    }
+    .recipe img {
+        margin-right: 10px;
+        height: 400px;
+    }
+    .hidden {
+        display: block;
+        font-size: 1.3em;
+    }
+    h2 {
+        font-size: 3em;
+    }
+    .category{
+        width: 140px;
+        text-align: center;
+        font-size: 40px;
+    }
 }
