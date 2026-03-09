@@ -55,3 +55,8 @@ let furryResult = pets.filter(function(item) {
 })
 
 console.log(furryResult);
+// random number 0-9
+let randomNum = Math.floor(Math.random() * 10);
+
+// die
+let diceRoll = Math.ceil(Math.random() * 5);
