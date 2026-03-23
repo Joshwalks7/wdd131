@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
   --primary-color: #003D4D;
-  --secondary-color: #F0F9FB;
+  --secondary-color: #f5ffff;
   --accent1-color: #FFFFFF;
   --accent2-color: #FF5733;
 
@@ -24,4 +24,47 @@
   --nav-background-color: var(--secondary-color);
   --nav-hover-link-color: white;
   --nav-hover-background-color: var(--primary-color);
+}
+* {
+    box-sizing: border-box;
+}
+header {
+    background-color: var(--secondary-color);
+    height:150px;
+}
+nav {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    line-height: 3em;
+    text-align: center;
+    font-size: 1.2em;
+    height: 100px;
+    align-items: center;
+}
+nav a {
+  padding: 1em;
+  min-width: 120px;
+  text-decoration: none;
+  padding: 10px;
+}
+nav a:link,
+nav a:visited {
+  color: var(--nav-link-color);
+}
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+header img {
+    width: 100px;
+    height: 100px;
+}
+.logo {
+    grid-column: 2/3;
+}
+.home-link {
+    grid-column: 10/11;
+}
+.trivia-link {
+    grid-column: 11/12;
 }
