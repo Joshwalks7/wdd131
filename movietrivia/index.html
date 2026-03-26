@@ -12,8 +12,9 @@
 </head>
 <body>
     <header>
-        <nav>
-            <p class="logo"><img src="images/movietrivialogo.png" alt="Movie Tria Logo"></p>
+        <p class="logo"><img src="images/logo2.png" alt="Movie Tria Logo"></p>
+        <button class="menu-btn"><h3>Menu</h3></button>
+        <nav class="hidden">
             <a href="index.html" class="home-link">Home</a>
             <a href="trivia.html" class="trivia-link">Trivia</a>
         </nav>
@@ -22,13 +23,15 @@
         <div id="hero-container">
             <img src="images/hero.png" alt="Hero Image">
         </div>
-        <div>
-            Search to learn more about movies or, if you're ready, <a class="play-trivia">PLAY TRIVIA</a>
+        <div class="intro">
+            Search to learn more about movies or, if you're ready, <button class="play-trivia"><a href="trivia.html">PLAY TRIVIA!</a></button>
         </div>
         <div id="search-container">
             <p>Search our database</p>
+            <div class="searchBar">
             <input type="text" id="searchBar" name="searchBar" placeholder='Try searching "action," "Star Wars," etc'>
             <button><img src="images/searchicon.jpg" alt="search icon"></button>
+            </div>
         </div>
         <div id="movie-container">
 

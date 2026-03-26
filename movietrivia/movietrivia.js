@@ -9,3 +9,8 @@ async function getMovies() {
 }
 
 getMovies();
+
+const menuBtn = document.querySelector('.menu-btn');
+const menuNav = document.querySelector('nav');
+
+menuBtn.addEventListener('click', () => menuNav.classList.toggle('hidden'))
