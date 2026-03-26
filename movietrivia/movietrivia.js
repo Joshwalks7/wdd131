@@ -14,3 +14,8 @@ const menuBtn = document.querySelector('.menu-btn');
 const menuNav = document.querySelector('nav');
 
 menuBtn.addEventListener('click', () => menuNav.classList.toggle('hidden'))
+
+let movieContainer = document.getElementById('movie-container');
+let input = document.querySelector('.searchBar');
+let searchBtn = document.querySelector('searchButton');
+
