@@ -51,7 +51,7 @@ function renderMovie(movie) {
 };
 function movieTemplate(movie) {
     return `<div class="movie">
-                <img src='https://image.tmdb.org/t/p/w500${movie.poster_path}' alt='${movie.title} image'>
+                <img src='https://image.tmdb.org/t/p/w342${movie.poster_path}' alt='${movie.title} image'>
                 <div class='movie-text'>
                     <h1>${movie.title}</h1>
                     <h2><span class='heading'>Overview:</span> ${movie.overview}</h2>

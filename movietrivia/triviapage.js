@@ -98,7 +98,7 @@ function playGame() {
     let currentQuestion = questions[currentQuestionIndex];
     let shuffledAnswers = [...currentQuestion.answers].sort(() => Math.random() - 0.5)
     html = `
-        <div class='score'>Score: ${score} points</div>
+        <div class='score'>Score: ${score} points | ${currentQuestionIndex + 1}/10</div>
         <h2>${currentQuestion.question}</h2>
         <div class='answers'></div>
     `;
