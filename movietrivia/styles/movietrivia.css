@@ -183,7 +183,7 @@ h3 {
 }
 .movie img{
   width: 193px;
-  height: 290px;
+  height: 289.5px;
   border: var(--secondary-color) 3px solid;
   border-radius: 10px;
 }
@@ -191,7 +191,7 @@ h3 {
   font-size: 1.4em;
 }
 .heading {
-  color: var(--accent2-color);
+  color: white;
 }
 hr {
   background-color: var(--primary-color);
@@ -270,8 +270,8 @@ hr {
     max-width: 700px;
   }
   .movie img{
-  width: 233px;
-  height: 350px;
+  width: 233.33px;
+  height: 349.5px;
   border: var(--secondary-color) 3px solid;
   border-radius: 10px;
 }
