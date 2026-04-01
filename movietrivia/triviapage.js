@@ -19,7 +19,7 @@ questions = [
     {
         question: "In the Marvel Cinematic Universe, what is the name of Thor's hammer?",
         answers:[
-            {text: "Gungnir", isCorrect: false},
+            {text: "Jonathon", isCorrect: false},
             {text: "Mjolnir", isCorrect: true},
             {text: "Stormbreaker", isCorrect: false}
          ]
