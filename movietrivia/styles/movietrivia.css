@@ -115,6 +115,7 @@ footer{
 .start-game {
   color: white;
   width: 200px;
+  cursor: pointer;
 }
 h3 {
   margin: 0;
