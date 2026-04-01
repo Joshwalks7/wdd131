@@ -193,6 +193,10 @@ h3 {
 .movie-text h3{
   font-size: 1.4em;
 }
+#movie-container p {
+  text-align: center;
+  font-size: 2em;
+}
 .heading {
   color: white;
 }

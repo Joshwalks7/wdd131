@@ -1,5 +1,5 @@
 const apiKey = '4480f08bdaabee0f09bd65d6e0a25f12';
-const url = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=en-US&page=1`;
+const url = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=lego`;
 
 async function getMovies() {
     const response = await fetch(url);
