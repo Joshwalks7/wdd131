@@ -8,7 +8,7 @@ async function getMovies() {
     results.forEach(function(movie) {
         renderMovie(movie);
     });
-    console.log("Here is your array of movies:", data.results);
+    console.log("Example Movie Results:", data.results);
 }
 
 getMovies();
